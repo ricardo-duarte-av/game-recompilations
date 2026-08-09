@@ -30,13 +30,19 @@ Just a list of game recompilations i've bumped into
 
 | Game | Repo | Targets | Notes |
 |------|------|---------|-------|
-| The Legend of Zelda: Link's Awakening DX HD | [BigheadSMZ/Zelda-LA-DX-HD-Updated](https://github.com/BigheadSMZ/Zelda-LA-DX-HD-Updated) | Windows, Linux, Android | Fork of an anonymous MonoGame-based HD PC port. Requires assets from the original v1.0.0 itch.io release. Supports DX11 and OpenGL. Includes mod support (graphics, music, SFX, dialogue). |
+| The Legend of Zelda: Link's Awakening DX HD | [bighead.0/ladxhd_updated](https://gitlab.com/bighead.0/ladxhd_updated) | Windows, Linux (x86/Arm64), macOS (x86/Arm64), Android (x86/Arm64) | MonoGame-based HD PC port; the author's GitLab home after the original GitHub repo was removed (v2.0.0 stated as final). Requires assets from the original v1.0.0 release. DX11 and OpenGL. Mod support via ModMaker/LAHDMods, patcher with headless mode, Classic Camera, and a Purist preset. |
 
 ## Game Boy Advance
 
 | Game | Repo | Targets | Notes |
 |------|------|---------|-------|
 | The Legend of Zelda: The Minish Cap | [999sian/tmc](https://github.com/999sian/tmc) | Windows, macOS, Linux | Native PC port built on SDL3 with a software PPU renderer. Requires a legally obtained GBA ROM (USA/EU). Pre-built releases available. WIP. |
+
+## PlayStation
+
+| Game | Repo | Targets | Notes |
+|------|------|---------|-------|
+| Castlevania: Symphony of the Night | [BlackLabelHQ/SymphonyRecomp](https://github.com/BlackLabelHQ/SymphonyRecomp) | Windows, Linux | Static recompilation via RecompOne (uses the parallel SOTN decomp only for function naming/patches — this is a REcomp, not a DEcomp). Requires the NA PSX version in bin/cue format (two `.bin` tracks + `.cue`). Needs OpenGL 3.3+, .NET 10, and OpenAL. Mod support included. Open beta, pre-1.0. |
 
 ## Nintendo GameCube / Wii
 
@@ -50,6 +56,8 @@ Just a list of game recompilations i've bumped into
 |------|------|---------|-------|
 | Sonic Unleashed | [hedge-dev/UnleashedRecomp](https://github.com/hedge-dev/UnleashedRecomp) | Windows, Linux | Static recompilation of the X360 version via XenonRecomp (PowerPC → C++) and XenosRecomp (Xenos shaders → HLSL). Requires D3D12 or Vulkan 1.2. Supports high res, ultrawide, high framerate, and mods. Requires legally obtained X360 game files. |
 | Dragon Ball Z Budokai HD | [WistfulHopes/DBZ1](https://github.com/WistfulHopes/DBZ1) | PC (native) | Static recompilation of the Xbox 360 version via ReXGlue SDK (PowerPC → C++). Very early stage (v0.0.2, 2 commits). Requires original game assets. |
+| Diablo III: Reaper of Souls | [Boron853/Souls-of-the-Reaper](https://github.com/Boron853/Souls-of-the-Reaper) | Windows 10/11 x64 | X360 → PC port via ReXGlue SDK (AOT PPC → native x64 C++) with Xenia-based kernel emulation. Requires a decrypted XEX + 7.4 GB CPK archives from disc and a valid Reaper of Souls save. Two D3D12 paths: ROV (faithful, 60fps) and RTV (fast, up to 240fps). Local co-op up to 4 players. Playable and stable. |
+| Daytona USA | [Subarasheese/daytona-xbla-recomp](https://github.com/Subarasheese/daytona-xbla-recomp) | Windows, Linux (Android planned) | Static recompilation of the XBLA (2011) version via ReXGlue SDK. Requires a legally obtained XBLA STFS package (~240 MB); script extracts the XEX. Currently uses X360 GPU emulation; native Vulkan/D3D12 backend on the roadmap (along with ultrawide and keyboard controls). Active development. |
 
 ## PC / Mobile (Sega Retro Engine)
 
